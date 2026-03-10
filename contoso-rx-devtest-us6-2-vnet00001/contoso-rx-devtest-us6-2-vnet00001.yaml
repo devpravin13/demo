@@ -1,0 +1,29 @@
+subscription: gsk-hostingservices-devtest-subscription
+subscriptionID: 70bbc05d-d5c7-4acf-98ed-17a337eee10e
+resourceGroup: hostingops-network-vnet-devtest
+VnetName: contoso-rx-devtest-us6-2-vnet00001
+networkType: it
+location: us6-2
+vnetaddresses:
+  - 192.168.0.0/16
+  - 192.168.0.0/17
+  - 192.168.0.0/18
+  - 192.168.0.0/24
+environment: devtest
+subnet_details:
+
+  - subnet_name: contoso-rx-devtest-us6-2-vnet00001-sub00001-appgw
+    subnet_address: 192.168.0.0/16
+    subnet_type: appgw
+    subnet_short_name: appgw1
+
+  - subnet_name: contoso-rx-devtest-us6-2-vnet00001-sub00001-appgw
+    subnet_address: 192.168.0.0/16
+    subnet_type: appgw
+    subnet_short_name: appgw2
+
+  - subnet_name: contoso-rx-devtest-us6-2-vnet00001-sub00001-internal
+    subnet_address: 192.168.0.0/16
+    subnet_type: internal
+    subnet_short_name: internal1
+
